@@ -1,10 +1,21 @@
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 import SummaryScreen from "./pages/SummaryScreen";
-import "./style/app.css"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+
 function App() {
   
   return (
     <div>
-      <SummaryScreen/>
+      <BrowserRouter>
+      
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
