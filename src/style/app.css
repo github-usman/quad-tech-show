@@ -1,80 +1,75 @@
-
 /* mainCard */
 
-.main-card-main>div>img{
-    border-radius: 8px;
-    height: 100%;
-    
-   
+.image-div img {
+	border-radius: 8px;
+	height: 100%;
 }
 
-.image-div{
-    position: relative;
-    max-width: 15rem;
+.image-div {
+	position: relative;
+	max-width: 15rem;
+}
+
+.image-div img:hover {
+	box-shadow: 3px 3px 8px 6px #ffd1d1;
 }
 
 @media (max-width: 600px) {
-    /* Your styles for screens up to 600px wide */
-    .image-div {
-      max-width: 100%;
-      /* Add more styles as needed */
-    }
-    
-  }
-.image-child>img{
-   
-    width: 1.1rem;
-    height: 1.1rem;
+	.image-div {
+		max-width: 100%;
+	}
+}
+.image-child > img {
+	width: 1.1rem;
+	height: 1.1rem;
 }
 
-.image-child p{
-   margin-top: auto;
-   margin-bottom: auto;
-   padding: 0.2rem 0;
-
+.image-child p {
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 0.2rem 0;
 }
-.image-child{
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: -0.5rem;
-    width: 100%;
-    color: #ffffff;
-    background-color: #000000;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    align-items: center;
-    box-shadow: 0px -5px 7px -1px #363333ee;
+.image-child {
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -0.5rem;
+	width: 100%;
+	color: #ffffff;
+	background-color: #000000;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	align-items: center;
+	box-shadow: 0px -5px 7px -1px #363333ee;
 }
-.language{
-    color: #5a54548c;
+.language {
+	color: #5a54548c;
 }
 /* summary card */
 
-
 /* Footer */
 
-a{
-    text-decoration: none;
-    color: #000000;
+a {
+	text-decoration: none;
+	color: #000000;
 }
-a:hover{
-    text-decoration: none;
-    color: rgb(13, 84, 165);
+a:hover {
+	text-decoration: none;
+	color: rgb(13, 84, 165);
 }
-.text-white>span{
-    letter-spacing: 1px;
-    color: #000000;
-    font-weight: 500;
-    font-family: 'Roboto Slab', serif;
+.text-white > span {
+	letter-spacing: 1px;
+	color: #000000;
+	font-weight: 500;
+	font-family: 'Roboto Slab', serif;
 }
-span:hover{
-    color: blue;
+span:hover {
+	color: blue;
 }
-body{
-    width: 100%;
+body {
+	width: 100%;
 }
 
-footer{
-    background-color: #FF9494;
+footer {
+	background-color: #ff9494;
 }
