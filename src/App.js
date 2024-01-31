@@ -9,10 +9,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      
         <Routes>
           <Route path="/" element={<Home/>} />
-          
+          <Route path="/summary/:val" element={<SummaryScreen/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
