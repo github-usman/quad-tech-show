@@ -12,6 +12,7 @@
 
 .image-div img:hover {
 	box-shadow: 3px 3px 8px 6px #ffd1d1;
+
 }
 
 @media (max-width: 600px) {
@@ -45,7 +46,6 @@
 .language {
 	color: #5a54548c;
 }
-/* summary card */
 
 /* Footer */
 
@@ -73,3 +73,75 @@ body {
 footer {
 	background-color: #ff9494;
 }
+
+/* summary card */
+.welcome-poster{
+	background-color: #1A1A1A;
+	height: 32rem;
+	
+}
+
+
+.summary-images{
+	position: relative;
+}
+
+.summary-images-inner{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 1280px;
+	margin: auto;
+}
+.summary-images img:nth-child(2){
+	width: 65%;
+	height: 32rem;
+	object-fit: cover;
+	object-position: 0% 15%;
+	opacity: 65%;
+	box-shadow: -18px 0px 50px 30px #c7aaaa
+}
+
+
+.summary-images img:nth-child(1){
+	height: 28rem;
+	margin-top: auto;
+	margin-bottom: auto;
+	border-radius: 8px;
+	max-width: 18rem;
+}
+
+
+.image-btn-box{
+	
+	justify-content: start;
+	align-items: center;
+	background: linear-gradient(to right, #00000027,#00000069, #fdfdfd15);
+	border-radius: 8px;
+	width: 32rem;
+	color: #ffffff;
+	position: absolute;
+	top: 50%; 
+    left: 48%;
+	padding: 1rem; 
+     transform: translate(-50%, -50%); 
+}
+
+.image-btn-box img{
+	width: 2rem;
+	height:2rem !important;
+}
+.image-btn-child{
+	display: flex;
+
+	 /* Align items vertically center */
+	gap: 1rem;
+}
+.btn{
+	padding: 0.5rem 3rem;
+}
+.image-box-details{
+	display: flex;
+	gap: 1rem;
+}
+
