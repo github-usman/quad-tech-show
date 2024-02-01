@@ -98,7 +98,7 @@ footer {
 	height: 32rem;
 	object-fit: cover;
 	object-position: 0% 15%;
-	opacity: 65%;
+	opacity: 50%;
 	box-shadow: -18px 0px 50px 30px #c7aaaa
 }
 
@@ -113,12 +113,12 @@ footer {
 
 
 .image-btn-box{
-	
 	justify-content: start;
 	align-items: center;
 	background: linear-gradient(to right, #00000027,#00000069, #fdfdfd15);
 	border-radius: 8px;
 	width: 32rem;
+	height: 100%;
 	color: #ffffff;
 	position: absolute;
 	top: 50%; 
@@ -127,14 +127,18 @@ footer {
      transform: translate(-50%, -50%); 
 }
 
+.image-btn-box>h2{
+	margin-top: 20%;
+}
+
 .image-btn-box img{
 	width: 2rem;
 	height:2rem !important;
 }
 .image-btn-child{
 	display: flex;
-
-	 /* Align items vertically center */
+  
+	align-items: center;
 	gap: 1rem;
 }
 .btn{
@@ -145,3 +149,9 @@ footer {
 	gap: 1rem;
 }
 
+/* nabar */
+
+.navbar{
+	background-color: #FF9494;
+
+}
