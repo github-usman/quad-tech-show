@@ -70,7 +70,7 @@ const SummaryScreen = () => {
 											}}
 											className="mx-2"
 										>
-											{apiData.show.network.country.name}
+											{apiData.show.country && apiData.show.network.country.name}
 										</p>
 									</div>
 									<div className="image-box-details">
