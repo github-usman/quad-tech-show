@@ -77,14 +77,14 @@ const SummaryScreen = () => {
 										<p>
 											{hours}h {minutes}m &nbsp;&nbsp;<b>.</b>
 										</p>
-										{apiData.show.genres.map((element) => (
-											<p>{element},</p>
+										{apiData.show.genres.map((element,index) => (
+											<p key={index}>{element},</p>
 										))}
 										<b>.</b>
 										<p>{new Date(apiData.show.ended).toDateString()}</p>
 									</div>
 									<Link
-										to={`/book/${apiData.show.name}`}
+										to={`/book/${apiData.show !== undefined ? apiData.show.name :''}`}
 										className="btn btn-danger btn-lg mt-3"
 									>
 										Book Show
@@ -132,10 +132,10 @@ const SummaryScreen = () => {
 							<li>IMDB : {apiData.show.externals.imdb}</li>
 						</ul>
 						<div className="d-flex premier justify-content-between">
-							<p class="btn btn-danger me-5 ">
+							<p className="btn btn-danger me-5 ">
 								Show premiered date : {apiData.show.premiered}
 							</p>
-							<p class="btn btn-dark">Show ended date : {apiData.show.ended}</p>
+							<p className="btn btn-dark">Show ended date : {apiData.show.ended}</p>
 						</div>
 					</div>
 				</>

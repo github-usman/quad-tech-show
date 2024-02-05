@@ -87,7 +87,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	width: 1280px;
+	max-width: 1280px;
 	margin: auto;
 }
 .summary-images img:nth-child(2) {
