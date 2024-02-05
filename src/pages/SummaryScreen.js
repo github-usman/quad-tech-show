@@ -83,12 +83,16 @@ const SummaryScreen = () => {
 										<b>.</b>
 										<p>{new Date(apiData.show.ended).toDateString()}</p>
 									</div>
-									<Link
-										to={`/book/${apiData.show !== undefined ? apiData.show.name :''}`}
-										className="btn btn-danger btn-lg mt-3"
-									>
-										Book Show
-									</Link>
+									{apiData.show && apiData.show.network && apiData.show.network.country ? (
+										<Link
+											to={`/book/${apiData.show.name}`}
+											className="btn btn-danger btn-lg mt-3"
+										>
+											Book Show
+										</Link>
+										) : (
+										<p className="btn btn-danger btn-lg mt-3">Book Show</p>
+										)}
 								</div>
 							</div>
 						</div>
